@@ -16,7 +16,11 @@ button, input[type="submit"] {
 * {
     box-sizing: border-box;
 }
-
+@media (max-width: 768px) {
+    .hide-on-mobile {
+        display: none!important;
+    }
+}
 p {
     margin: 0 0 25px 0;
 }
