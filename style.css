@@ -677,8 +677,6 @@ img {
     font-weight: 500;
     width: 100%;
     max-width: 100%;
-    min-width: 250px;
-    min-height: 200px;
     resize: none;
     border: 1px solid #d8d8d8;
     transition: 0.2s ease;
