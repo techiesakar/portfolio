@@ -11,6 +11,12 @@
         integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <script src="https://kwesforms.com/v2/kwes-script.js" defer></script>
+
+
+
+
+
+
 </head>
 
 <body class="home header-has-img">
@@ -110,31 +116,58 @@
                     <h2 id="instagram" class="section-title">Check My Instagram</h2>
                     <div id="instafeed-container" class="insta-gallery section-box"></div>
                 </section>
+
+                <section class="section contact" id="contact">
+
+
+                    <div style="min-height: 607px;" class="section-box col-sm-6">
+
+                        <form name="contact" method="POST"  data-netlify="true">
+                            <div class="form-group name">
+                               
+                               
+                                <input placeholder="Full Name*" type="text">
+                               
+                            </div>
+                            <div class="form-group email">
+                                <input placeholder="Email*" type="email">                               
+                            </div>
+                            <div class="form-group subject">
+                                <input placeholder="Subject*" type="text">                               
+                            </div>
+                            <div class="form-group text-form">
+                                <label class="label" for="message">Message <span class="mandatory">*</span></label>
+
+                                <textarea class="text-area" rows="10" name="message"></textarea>
+                              
+                            </div>
+                            <div class="form-group submit-container">
+                                <button type="submit" class="btn btn-lg btn-primary">Submit</button>
+                                
+                            </div>
+                        </form>
+                    </div>
+                    <div style="min-height: 607px;" class="section-box col-sm-6"></div>
+
+                </section>
             </div>
         </div>
-        <script src="https://cdn.jsdelivr.net/gh/stevenschobert/instafeed.js@2.0.0rc1/src/instafeed.min.js"></script>
-        <script type="text/javascript">
-            var userFeed = new Instafeed({
-                get: 'user',
-                target: "instafeed-container",
-                resolution: 'low_resolution',
-                accessToken: 'IGQVJXOWlnV1pUNllVQmFPQWdpdnFtTzVrR1dFcHVacFBRNEdOQjU5cy1hSDQ3YmZAOb1BJbXRqTWlJMzBGWi12cnZAxazNUSTlFWWItWXgwUTFidjJuODBzUi13U3Jidllxb2R4X2ZAsWTFXUEhvMzBzXwZDZD',
-                limit: 8,
-                template: '<a href="{{link}}"><img title="{{caption}}" src="{{image}}" /><div class="image-overlay"></div></a>'
-            });
-            userFeed.run();
-        </script>
-        <section id="contact">
-            <form class="kwes-form" action="https://kwesforms.com/api/foreign/forms/ExS2RPuyaX5CuHevsdNT">
-                <label for="name">Your Name</label>
-                <input type="text" name="name" rules="required|max:255">
-                <button type="submit">Submit</button>
-            </form> 
 
-        </section>
+
         <footer class="footer"></footer>
     </div>
-
+    <script src="https://cdn.jsdelivr.net/gh/stevenschobert/instafeed.js@2.0.0rc1/src/instafeed.min.js"></script>
+    <script type="text/javascript">
+        var userFeed = new Instafeed({
+            get: 'user',
+            target: "instafeed-container",
+            resolution: 'low_resolution',
+            accessToken: 'IGQVJXOWlnV1pUNllVQmFPQWdpdnFtTzVrR1dFcHVacFBRNEdOQjU5cy1hSDQ3YmZAOb1BJbXRqTWlJMzBGWi12cnZAxazNUSTlFWWItWXgwUTFidjJuODBzUi13U3Jidllxb2R4X2ZAsWTFXUEhvMzBzXwZDZD',
+            limit: 8,
+            template: '<a href="{{link}}"><img title="{{caption}}" src="{{image}}" /><div class="image-overlay"></div></a>'
+        });
+        userFeed.run();
+    </script>
 </body>
 
 </html>
